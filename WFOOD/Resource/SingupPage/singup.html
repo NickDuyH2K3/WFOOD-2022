@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WFOOD Sign Up | WFOOD ®</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/Images/favicon.png" type="image/png">
+    </head>
+    <body>
+      
+      <div class="logo">
+        <a href="/Resource/MainPage/index.html"><img src="/Images/logo_dark.svg" class="logo-image" id = "logo"></a>
+      </div>      
+          <div class="login">
+            <div class="form">
+              <h2>Create account</h2>
+              <div class="sign-up">
+                <span>
+                    Already have an account?
+                  <a href="/Resource/LoginPage/login.html">Log In</a>
+                </span>
+              </div>
+              <form action="/Resource/MainPage/index.html">
+                <input type="text" placeholder="First name" required
+                    oninvalid="this.setCustomValidity('Enter your first name')"
+                    oninput="this.setCustomValidity('')">
+                <input type="text" placeholder="Last name" required
+                    oninvalid="this.setCustomValidity('Enter your last name')"
+                    oninput="this.setCustomValidity('')">
+                <input type="email" placeholder="Email"  maxlength="255" required
+                    oninvalid="this.setCustomValidity('Enter your email')"
+                    oninput="this.setCustomValidity('')">
+                <input type="password" placeholder="Password" required
+                    oninvalid="this.setCustomValidity('Enter your password')"
+                    oninput="this.setCustomValidity('')">
+                <div class="accept">
+                    <span>
+                      By getting started, you acknowledge and agree to <br>
+                      <a href="#">Terms of Use</a>
+                      and
+                      <a href="#">Privacy Policy</a>
+                    </span>
+                </div>  
+                <a href="/Resource/MainPage/index.html"><input type="submit" value="SIGN UP" class="submit"></a>
+              </form>
+            </div>
+          </div>           
+      <div class="footer">
+        <div class="footer-text">
+          <p class="right-reserved">© 2022 WFood All Rights Reserved.</p>
+          <span class="policy">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">About Us</a> 
+          </span>
+        </div>
+      </div>
+    </body>
+</html>

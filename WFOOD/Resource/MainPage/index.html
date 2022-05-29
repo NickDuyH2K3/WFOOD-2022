@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>WFOOD Official Website | WFOOD ®</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <!--import css-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--favicon-->
+        <link rel="icon" href="/Images/favicon.png" type="image/png">
+        
+        <!--script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="action.js"></script>
+        <!--fonts-->    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="loading">
+            <div></div>
+        </div>
+    <div class="container">
+        <!--navbar-->
+            <div id="pagetop">
+                <a href="#home"><img src="/Images/logo_dark.svg" class="logo-image" id = "logo"></a>
+
+                <a id = "ho" href="#home" title="Home">Home</a>
+                <a id = "fo" href="#food" title="Food" >Food</a>
+                <a id = "de" href="#delivery" title="Delivery">Delivery</a>
+                <a id = "co" href="#contact" title="Contact">Contact</a>
+                <a id = "ab" href="#about" title="About">About</a>
+                
+                <img src="/Images/icon_search_dark.svg" id="search-icon">
+                <img src="/Images/icon_moon_dark.svg" id="moon-icon">
+                
+                <a href="/Resource/LoginPage/login.html">
+                    <img src="/Images/icon_login_dark.svg" id="login-icon">
+                </a>    
+            </div>  
+        <section id="home">
+
+            <!--Circle-->
+            <img src="/Images/circlewhite.png" id="circle-main">
+
+            <!--Text order-->
+            <div class = "text">
+                <p id = "special"><b>Your food is <br> Wating for you</b></p> <br>
+                <p id = "what">What To Eat At Night?</p>
+                <a href="#food" id = "order-button"></a>
+                <a href = "#food" class = "ordernow"><p id ="order-text">Order now</p></a>
+
+                <p id = "tilte_food">Bun bo Hue</p><br>
+                <div class = "bunbo-line">
+                    <img src="/Images/Home/logo-home.svg">
+                </div>
+                <p id = "details_food">Bun Bo Hue is a beef noodle soup which is originated from Hue, 
+                    located in the middle of Vietnam, an old empire of Vietnam in the past, is the land of rich traditions and of course dishes 
+                    that represent the true taste of Vietnam. 
+                    And Bun Bo Hue reflects all these characteristics of the city with a great combination of 
+                    smell, ingredient, color and the flavor of royal cookery.
+                </p>
+            </div>
+
+            <!--Image-->
+            <div class = "food">
+                <img src="/Images/bunbo.png" id="bunbo">
+                <img src="/Images/com.png" id="com">
+                <img src="/Images/mquang.png" id="mquang">
+                <img src="/Images/pho.png" id="pho">
+            </div>
+        </section>
+        <section id="food">
+            <!--food-->
+            <div class = "foodorder">
+                <p id="ourmenu">OUR MENU</p>
+                <p id="slogan">Menu That Always<br>Make You Fall In Love</p>
+
+                <div class="slideshow middle">
+                        <div class="slides">
+                            <input type="radio" name="r" id="r1" checked>
+                            <input type="radio" name="r" id="r2">
+                            <input type="radio" name="r" id="r3" >
+                            <div class="slide s1">
+                                <img src="/Images/Food/bunbo1.svg" id="bunbo1">
+                                <img src="/Images/Food/pho1.svg" id="pho1">
+                                <img src="/Images/Food/myquang1.svg" id="myquang1">
+                                <img src="/Images/Food/comchien1.svg" id="comchien1">
+                            </div>
+                            <div class="slide">
+                                <img src="/Images/Food/cari.svg" id="cari">
+                                <img src="/Images/Food/chao.svg" id="chao">
+                                <img src="/Images/Food/nui.svg" id="nui">
+                                <img src="/Images/Food/xoi.svg" id="xoi">
+                            </div>
+                            <div class="slide">
+                                <img src="/Images/Food/cappuccino.svg" id="cappuccino">
+                                <img src="/Images/Food/matchalatte.svg" id="matchalatte">
+                                <img src="/Images/Food/milktea.svg" id="milktea">
+                                <img src="/Images/Food/pinklatte.svg" id="pinklatte">
+                            </div>
+                            <div class="navigation">
+                                <label for="r1" class="bar"></label>
+                                <label for="r2" class="bar"></label>
+                                <label for="r3" class="bar"></label>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="delivery">
+            <div class="delivery">
+                <span id="steps">
+                    THREE <b>EASY</b> STEPS
+                </span>
+
+                <img src="/Images/Delivery/add.svg" id="add">
+                <img src="/Images/Delivery/shipper.svg" id="shipper">
+                <img src="/Images/Delivery/confirm.svg" id="confirm">
+
+                <p id="add1">Browser the menu and order 
+                            directly from the application</p>
+                <p id="ship1">Your order will be immediately
+                            collected and sent by our courier</p>
+                <p id="confirm1">Pick up delivery at your
+                            door and enjoy our foods</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class = "contact">
+                <img src="/Images/Contact/line.svg" id="line">
+                <p id="sayhi">say hi to the team</p>
+                <p id="contactus">Contact Us</p>
+                <p id="free">feel free to contact us and we will get 
+                    back to you as soon as we can.</p>
+
+                <p id="open">opening hours</p>
+                <p id="open1">Monday - Sunday <br> 10pm - 4am</p>
+
+                <p id="address">address</p>
+                <a href="https://bit.ly/3a8pRU6" target="_blank"><p id="address1">470 Tran Dai Nghia, Hoa Hai <br> Ngu Hanh Son, Da Nang</p></a>
+
+                <p id="support">support</p>
+                <a href="https://bit.ly/3LHejo2" target="_blank"><p id="support1">supportwfood@vietnam.vn <br> +84 789 1909-03</p></a>
+                
+                <input type="text" id="inputname" placeholder="name"/>
+                <input type="text" id="inputmail" placeholder="email address"/>
+                <input type="text" id="inputproblem" placeholder="tell us about it"/>
+
+                <a href="##" id="button-contact">send</a>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nguyenhung409/" target="_blank"><img src="/Images/Contact/logoface-white.svg" id="facebook"></a>
+                    <a href="https://twitter.com/nguyenhung03093" target="_blank"><img src="/Images/Contact/logotwit-white.png" id="twitter"></a>
+                    <a href="https://www.instagram.com/nph.19_3/" target="_blank"><img src="/Images/Contact/logoins-white.svg" id="instagram"></a>
+                    <a href="##"><img src="/Images/Contact/logowfood-white.svg" id="wfood"></a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about">
+                <span id="aboutus">
+                    ABOUT <b>US.</b>
+                </span>
+                <p id="ourteam">About us. <br> Our team. <br> Press.</p>
+                <p id="details-about">We look to ignite your senses through the aromas, presentation and flavor of any & every dish whipped up in our kitchen. We seek to serve all out guests with the perfect dinning experience. We ensure that every ingredient that is tassed in your dish is fine and every delicacy cooked is servede with perfection.</p>
+                <img src="/Images/About/tablefood.svg" id="tablefood">
+  
+                <span id="vision">
+                    “  The <i>W</i> in <i>W</i>Food means <i>WOW</i> <br>
+                    Bringing you the sweetest taste, <br>
+                    that's our honor. ”
+                </span>
+                <p id="phuchung">Nguyen Phuc Hung, Founder</p>
+                <img src="/Images/About/leader.svg" id="leader">
+
+                <img src="/Images/About/leader.svg" id="leader">
+                <img src="/Images/About/duy.svg" id="duy">
+                <img src="/Images/About/hung.svg" id="hung">
+                <!-- <img src="/Images/About/phu.svg" id="phu">
+                <img src="/Images/About/phuc.svg" id="phuc"> -->
+
+                <p id="ourteam1">OUR TEAM.</p>
+                <p id="ourteam-content">Some amazing quote about the WFood team can  go here “from one of
+                    our current or previous clients!" <br> WFood is the future, abright vibrant.</p>
+                <!--<p id="a50">50</p>
+                <p id="a4500">4500</p>
+                <a id = "a1m">1M+</a>-->
+
+                <div class="counter" data-target="50">50</div>
+                <div class="a4500" data-target="4500"><p id="a4500">4500</p></div>
+                <div class="a1m" data-target="500000"><p id="a1m">1M+</p></div>
+                <p id="content-50">stores <br> in VietNam</p>
+                <p id="content-4500">employees</p>
+                <p id="content-1m">monthly orders</p>
+
+                <div id="footer">
+                    <rect id="rectangle"></rect>
+                    
+                    <a href="https://twitter.com/nguyenhung03093" target="_blank"><img src="/Images/Footer/logotwit-footer.svg" id="twitter-footer"></a>
+                    <a href="https://www.instagram.com/nph.19_3/" target="_blank"><img src="/Images/Footer/logoins-footer.svg" id="instagram-footer"></a>
+                    <a href="https://twitter.com/nguyenhung03093" target="_blank"><img src="/Images/Footer/logoface-footer.svg" id="facebook-footer"></a>
+
+                    <p id="p21">© 2022 - From 21IT1</p>
+
+                    <a href="#delivery"><p id="delivery1">Delivery</p></a>
+                    <a href="#about"><p id="about1">About</p></a>
+                    <a href="#contact"><p id="contact1">Contact</p></a>
+                    <a href="https://vku.udn.vn/" target="_blank"><p id="advertising1">Adevertising</p></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <script>
+                var moonicon = document.getElementById("moon-icon");
+                var logo = document.getElementById("logo");
+                var searchicon = document.getElementById("search-icon");
+                var loginicon = document.getElementById("login-icon");
+
+                var logowfood = document.getElementById("wfood");
+                var logoface = document.getElementById("facebook");
+                var logotwit = document.getElementById("twitter");
+                var logoins = document.getElementById("instagram");
+
+                    moonicon.onclick = function()
+                {
+                    document.body.classList.toggle("dark-mode");
+                    if(document.body.classList.contains("dark-mode"))
+                    {
+                    
+                        logo.src = "/Images/logohompage.svg";
+                        searchicon.src = "/Images/icon_search.svg";
+                        moonicon.src = "/Images/icon_moon_light.svg";
+                        loginicon.src = "/Images/icon_login.svg";
+
+                        logowfood.src = "/Images/Contact/logowfood.svg";
+                        logotwit.src = "/Images/Contact/logotwit.png";
+                        logoins.src = "/Images/Contact/logoins.svg";
+                        logoface.src = "/Images/Contact/logoface.svg";
+                        
+                    }
+                    else
+                    {
+                        logo.src = "/Images/logo_dark.svg";
+                        searchicon.src = "/Images/icon_search_dark.svg";
+                        moonicon.src = "/Images/icon_moon_dark.svg";
+                        loginicon.src = "/Images/icon_login_dark.svg";
+
+                        
+                        logowfood.src = "/Images/Contact/logowfood-white.svg";
+                        logotwit.src = "/Images/Contact/logotwit-white.png";
+                        logoins.src = "/Images/Contact/logoins-white.svg";
+                        logoface.src = "/Images/Contact/logoface-white.svg";
+
+                       
+                    }
+                }
+
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("pagetop").style.top = "0";
+                } else {
+                    document.getElementById("pagetop").style.top = "-80px";
+                }
+                prevScrollpos = currentScrollPos;
+                }
+
+                $(window).on('load',function() {
+                    $('.loading').fadeOut(1000);
+                    $('.container').fadeIn(1000);
+                });         
+        </script>
+        
+    </body>
+</html>
+ 
